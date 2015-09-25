@@ -1,0 +1,122 @@
+<div class="container">
+    <h2>Seating Area</h2>
+    <hr/>
+    <div>
+        <div>
+            <div class="col-sm-4">
+                <div  data-ng-class="seatingCtrl.table.first.tableClass" data-ng-model="seatingCtrl.table.first" data-ng-click="seatingCtrl.table.first.assign()">
+                    <p>Table No : {{seatingCtrl.table.first.number}}</p>
+                    <p>Status: {{seatingCtrl.table.first.statusCode}}</p>
+                    <p>Since: {{seatingCtrl.table.first.time}}</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div  data-ng-class="seatingCtrl.table.second.tableClass" data-ng-model="seatingCtrl.table.second" data-ng-click="seatingCtrl.table.second.assign()">
+                    <p>Table No : {{seatingCtrl.table.second.number}}</p>
+                    <p>Status: {{seatingCtrl.table.second.statusCode}}</p>
+                    <p>Since: {{seatingCtrl.table.second.time}}</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-4">
+                <div  data-ng-class="seatingCtrl.table.third.tableClass" data-ng-model="seatingCtrl.table.third" data-ng-click="seatingCtrl.table.third.assign()">
+                    <p>Table No : {{seatingCtrl.table.third.number}}</p>
+                    <p>Status: {{seatingCtrl.table.third.statusCode}}</p>
+                    <p>Since: {{seatingCtrl.table.third.time}}</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-4">
+            <div  data-ng-class="seatingCtrl.table.fourth.tableClass" data-ng-model="seatingCtrl.table.fourth" data-ng-click="seatingCtrl.table.fourth.assign()">
+                <p>Table No : {{seatingCtrl.table.fourth.number}}</p>
+                <p>Status: {{seatingCtrl.table.fourth.statusCode}}</p>
+                <p>Since: {{seatingCtrl.table.fourth.time}}</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div  data-ng-class="seatingCtrl.table.fifth.tableClass" data-ng-model="seatingCtrl.table.fifth" data-ng-click="seatingCtrl.table.fifth.assign()">
+                <p>Table No : {{seatingCtrl.table.fifth.number}}</p>
+                <p>Status: {{seatingCtrl.table.fifth.statusCode}}</p>
+                <p>Since: {{seatingCtrl.table.fifth.time}}</p>
+            </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div  data-ng-class="seatingCtrl.table.sixth.tableClass" data-ng-model="seatingCtrl.table.sixth" data-ng-click="seatingCtrl.table.sixth.assign()">
+                    <p>Table No : {{seatingCtrl.table.sixth.number}}</p>
+                    <p>Status: {{seatingCtrl.table.sixth.statusCode}}</p>
+                    <p>Since: {{seatingCtrl.table.sixth.time}}</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div data-ng-show="seatingCtrl.ShowField">
+        <br />
+        <div class="col-sm-9">
+            <label for="reserveCode">Reservation Code</label>
+            <input type="text" class="form-control" id="reserveCode" data-ng-model="seatingCtrl.code" placeholder="Enter confirmation code of your reservation" required>
+        </div>
+        <div class="col-sm-3">
+            <button type="submit" class="btn large-btn btn-warning" data-ng-click="seatingCtrl.assignReservation()">Assign</button>
+        </div>
+    </div>
+    <table class="table table-condensed table-responsive">
+        <thead>
+            <tr>
+                <th>Table#</th>
+                <th>CNF#</th>
+                <th>Status</th>
+                <th>Guest#</th>
+                <th>Since</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{seatingCtrl.table.first.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.first.showDetails()">{{seatingCtrl.table.first.cnf}}</a></td>
+                <td>{{seatingCtrl.table.first.statusCode}}</td>
+                <td>{{seatingCtrl.table.first.size}}</td>
+                <td>{{seatingCtrl.table.first.time}}</td>
+            </tr>
+            <tr>
+                <td>{{seatingCtrl.table.second.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.second.showDetails()">{{seatingCtrl.table.second.cnf}}</a></td>
+                <td>{{seatingCtrl.table.second.statusCode}}</td>
+                <td>{{seatingCtrl.table.second.size}}</td>
+                <td>{{seatingCtrl.table.second.time}}</td>
+            </tr>
+            <tr>
+                <td>{{seatingCtrl.table.third.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.third.showDetails()">{{seatingCtrl.table.third.cnf}}</a></td>
+                <td>{{seatingCtrl.table.third.statusCode}}</td>
+                <td>{{seatingCtrl.table.third.size}}</td>
+                <td>{{seatingCtrl.table.third.time}}</td>
+            </tr>
+            <tr>
+                <td>{{seatingCtrl.table.fourth.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.fourth.showDetails()">{{seatingCtrl.table.fourth.cnf}}</a></td>
+                <td>{{seatingCtrl.table.fourth.statusCode}}</td>
+                <td>{{seatingCtrl.table.fourth.size}}</td>
+                <td>{{seatingCtrl.table.fourth.time}}</td>
+            </tr>
+            <tr>
+                <td>{{seatingCtrl.table.fifth.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.fifth.showDetails()">{{seatingCtrl.table.fifth.cnf}}</a></td>
+                <td>{{seatingCtrl.table.fifth.statusCode}}</td>
+                <td>{{seatingCtrl.table.fifth.size}}</td>
+                <td>{{seatingCtrl.table.fifth.time}}</td>
+            </tr>
+            <tr>
+                <td>{{seatingCtrl.table.sixth.number}}</td>
+                <td><a data-ng-click="seatingCtrl.table.sixth.showDetails()">{{seatingCtrl.table.sixth.cnf}}</a></td>
+                <td>{{seatingCtrl.table.sixth.statusCode}}</td>
+                <td>{{seatingCtrl.table.sixth.size}}</td>
+                <td>{{seatingCtrl.table.sixth.time}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>

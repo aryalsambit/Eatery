@@ -1,0 +1,30 @@
+<div class="container">
+    <form data-ng-submit="editCtrl.updateReservation()">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="reserveDate">Date</label>
+                    <input type="date" class="form-control" id="reserveDate" data-ng-model="editCtrl.reservationItem.date" required>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="reserveTime">Time</label>
+                    <input type="time" name="time" class="form-control" data-ng-model="editCtrl.reservationItem.time" id="reserveTime"
+                           placeholder="HH:mm:ss" min="11:00:00" max="22:00:00" required />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label for="reserveSize">Guest #</label>
+                <input type="number" class="form-control" id="reserveSize" data-ng-model="editCtrl.reservationItem.size" placeholder="# Guests" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="reserveSpecial">Special Instructions</label>
+            <input type="text" class="form-control" id="reserveSpecial" data-ng-model="editCtrl.reservationItem.instruct" placeholder="e.g. Birthday, Anniversary etc.">
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn large-btn btn-success">Update</button>
+        </div>
+    </form>
+</div>

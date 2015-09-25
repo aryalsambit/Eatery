@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Reservation List <button class="btn btn-success toRight" data-ng-click="reserveListCtrl.createReservation()">New Reservation</button></h1>
+    <hr />
+    <table class="table table-condensed table-responsive">
+        <thead>
+            <tr>
+                <th>CNF#</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Guest#</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in reserveListCtrl.items">
+                <td>{{ item.conf }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.date }}</td>
+                <td>{{ item.time }}</td>
+                <td>{{ item.size }}</td>
+                <td><button class="btn btn-primary" ng-click="reserveListCtrl.showDetails(item.conf)">Details</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

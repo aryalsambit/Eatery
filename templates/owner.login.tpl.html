@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Login</h1>
+    <form role="form" data-ng-submit="loginCtrl.authenticateUser()">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="example@domain.com" data-ng-model="loginCtrl.owner.email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" data-ng-model="loginCtrl.owner.password" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" id="submit" class="btn large-btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

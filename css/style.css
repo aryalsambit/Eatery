@@ -1,0 +1,194 @@
+html {
+    background: rgba(0, 0, 0, 0);
+    background-image: radial-gradient(circle at 50% 50%, rgba(98, 98, 98, 0.89), #111b1a);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background: none;
+	width: 100%;
+	height:100%;
+}
+
+.container {
+    font-size: 0.9em;
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-brand {
+    padding: 6px;
+}
+.navbar-brand span.glyphicon {
+    font-size: 1.4em;
+    margin-right: 8px;
+    top: 5px;
+}
+
+.btn-primary {
+    background: #5585A2;
+}
+.btn.large-btn {
+    width: 200px;
+}
+.btn-filler:after {
+    content:".";
+    padding: 6px 12px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.table>tbody>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: #E7F0F5;
+}
+.table-condensed>tbody>tr>td {
+    padding: 2px 4px;
+}
+
+@media (min-width: 512px) {
+    .container {
+        font-size: 1em;
+    }
+}
+@media (min-width: 768px) {
+    .tab-content {
+
+    }
+    ul.nav-tabs.nav-justified>li {
+        float: none;
+    }
+}
+@media (min-width: 1024px) {
+    ul.nav-tabs a span.tab-text {
+        display: inline;
+    }
+    .note {
+        font-size: 1.5em;
+    }
+}
+
+.circle {
+    display: block;
+    border-radius: 50%;
+    position:fixed;
+    top: 4em;
+    right: 1em;
+    float:right;
+    width:8em;
+    height:8em;
+    margin: 0;
+    background: radial-gradient(circle at 15% 15%, #16ff46, #000);
+}
+
+
+
+.reserve {
+    overflow: scroll;
+    padding: 1em;
+    margin:0;
+    font-family: 'Lora', serif;
+    font-style: normal;
+}
+
+
+.start {
+    background: url(../background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    min-width: 100%;
+    left: 0;
+    top:3em;
+    height: 10em;
+}
+
+.icon {
+    position: relative;
+    top: 2.5em;
+    left: 0.4em;
+    display: inline-block;
+    color: #ece6c8;
+    font-size: 1.3em;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 15em;
+}
+.menu
+{
+    position:fixed;
+    width: 100%;
+}
+.note
+{
+    font-family: 'Tangerine', serif;
+    font-size: 3em;
+    color: #31b0d5;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #50aa3b;
+    text-align: center;
+}
+
+.marginRight{
+    margin-right:0.2em;
+}
+
+.pagecontent {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    font-style: normal;
+    font-size: 3em;
+    color: rgba(117, 175, 213, 0.18);
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
+}
+
+.btn-custom{
+    width:6em;
+    height: 2.5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-size: large;
+}
+.margin{
+    margin: 0.5em;
+}
+.toRight{
+    float:right;
+}
+.seats {
+    width: 12em;
+    height: 9em;
+    margin: 1em auto;
+    padding: 0.5em;
+
+    cursor: hand;
+}
+
+.occupied {
+    background:radial-gradient(circle at 15% 15%, #ff230f, #000);
+}
+
+.available {
+    background:radial-gradient(circle at 15% 15%, #50aa3b, #000);
+}

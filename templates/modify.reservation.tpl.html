@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Edit Reservation</h1>
+    <hr>
+    <div>
+        <div class="form-group">
+            <label for="reserveCode">Confirmation Code</label>
+            <input type="text" class="form-control" id="reserveCode" data-ng-model="modifyCtrl.code" placeholder="Enter confirmation code of your reservation" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn large-btn btn-warning" data-ng-click="modifyCtrl.editReservation()">Edit</button>
+            <button type="submit" class="btn large-btn btn-danger" data-ng-click="modifyCtrl.deleteReservation()">Delete</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</div>
